@@ -1,4 +1,5 @@
 # protto-interview
+
 portto's OA
 
 ## Prerequisites
@@ -18,7 +19,7 @@ Install it and run:
 
 ```sh
 yarn
-yarn start
+yarn dev
 ```
 
 ## Depandencies
@@ -32,4 +33,3 @@ yarn start
 - **Commitlint** - Lint commit messages
 - **lint-staged** - Run linters against staged git files
 - **Root import** - Import folders and files using the `@` prefix.
-
