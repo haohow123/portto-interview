@@ -22,6 +22,15 @@ yarn
 yarn dev
 ```
 
+---
+
+Something need to improve:
+
+1. In Asset page : description should detect if description is too long or doesn't need to show "shoud more button"
+2. In Asset page: Notice plain button would show first, but still figure out why that would happened
+
+---
+
 ## Depandencies
 
 - **Material UI** - React Material Ui Framework
