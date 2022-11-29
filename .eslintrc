@@ -3,7 +3,6 @@
     "browser": true,
     "es2021": true,
     "node": true,
-    "jest": true
   },
   "parserOptions": {
     "ecmaFeatures": {
@@ -15,18 +14,14 @@
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
   },
-  "plugins": ["react", "react-hooks", "jsx-a11y", "prettier", "jest"],
+  "plugins": ["react", "react-hooks", "jsx-a11y", "prettier"],
   "extends": [
     "plugin:react/recommended",
     "airbnb",
-    "prettier",
-    "plugin:jest/recommended",
-    "plugin:jest/style"
+    "prettier"
   ],
   "rules": {
     "camelcase": ["error", { "ignoreDestructuring": true,"properties": "never" }],
-    "jest/prefer-strict-equal": "error",
-    "jest/prefer-to-have-length": "warn",
     "prettier/prettier": "error",
     "import/prefer-default-export": "off",
     "react/prop-types": "off",
@@ -44,7 +39,7 @@
       }
     ],
     "import/extensions": [
-      "error",
+      1,
       "ignorePackages",
       {
         "ts": "never",
@@ -99,13 +94,5 @@
       }
     }
   ],
-  "settings": {
-    "import/resolver": {
-      "root-import": {
-        "rootPathPrefix": "@",
-        "rootPathSuffix": "src",
-        "extensions": [".js", ".ts", ".tsx", ".jsx", ".mdx"]
-      }
-    }
-  }
+
 }
